@@ -231,7 +231,7 @@ $(".depth1 > li").each(function(){
       sub.stop().slideUp(); })
  }) 
 //모바일 서비스
- if ($(window).width() < 800) {
+ if ($(window).width() < 750) {
   $('.depth1').hide();
   $('#section4 .service img').attr('src','images/service-banner1-m.jpg');//서비스배너
   $('#section1 .slider1 img').attr('src','images/slide1-m.jpg');//슬라이드1m
@@ -246,7 +246,7 @@ $(".depth1 > li").each(function(){
 
 } 
 $(window).resize(function(){
-if ($(window).width() < 800) {
+if ($(window).width() < 750) {
   $('.depth1').hide();
   $('#section4 .service img').attr('src','images/service-banner1-m.jpg');//서비스배너
   $('#section1 .slider1 img').attr('src','images/slide1-m.jpg');//슬라이드1m

@@ -436,7 +436,9 @@ opacity: 0;}
     color: #fff;
     display:none;
     position: absolute;
+    height: 30%;
 }
+
 #section2-m div:nth-child(1){
     padding: 50px;    text-align: center;
     border-right: 1px solid #656565;
@@ -445,7 +447,8 @@ opacity: 0;}
     background-image: url(../images/list_m.png);
     background-repeat: no-repeat;
     background-size: 60px;
-    background-position: 40px 30px;
+    background-position: 40px 90px;
+    line-height: 100px;
 }
 #section2-m div:nth-child(2){
     border:none; padding: 50px;    text-align: center;
@@ -455,9 +458,7 @@ opacity: 0;}
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: 40px 30px;
-
-
-
+    line-height: 100px;
 
 }
 /*달력 디자인*/
@@ -1264,6 +1265,17 @@ z-index: 999999;
 
 
 
+@media all and (max-width:950px){
+    #header .nav-open>a {
+        padding-right: 24px;
+        
+    }
+    #header .logo a img {
+        width: 93px;
+    }
+}
+
+
 
 
 @media all and (max-width:860px){
@@ -1290,16 +1302,9 @@ z-index: 999999;
 
 
 
-
-
-
-@media all and (max-width:950px){
+@media all and (max-width:835px){
     #header .nav-open>a {
-        padding-right: 24px;
-        
-    }
-    #header .logo a img {
-        width: 93px;
+        padding-right: 11px;
     }
 }
 
@@ -1360,6 +1365,8 @@ z-index: 999999;
 #header .logo {
 position: absolute;top:40px;left: 40%;
 }
+
+
 #section1 .slick-dots button {
     width: 141px;}
     #section6 .map-text-box {
@@ -1373,13 +1380,12 @@ position: absolute;top:40px;left: 40%;
     }
     #section2-m div:nth-child(1) {
 
-        background-size: 40px;
-        background-position: 40px 40px;
-    }
+        background-size: 55px;
+        background-position: 86px 68px;   
+     }
     #section2-m div:nth-child(2) {
-
-        background-size: 40px;
-        background-position: 40px 40px;
+        background-size: 55px;
+        background-position: 77px 74px;
     }
    
     
@@ -1413,12 +1419,5 @@ position: absolute;top:40px;left: 40%;
     #section2-m p{
         font-size: 0.7rem;
     }
-    #section2-m div:nth-child(1) {
-        background-size: 30px;
-        background-position: 40px 45px;
-    }
-    #section2-m div:nth-child(2) {
-        background-size: 30px;
-        background-position: 30px 45px;
-    }
+
 }
