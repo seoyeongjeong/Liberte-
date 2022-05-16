@@ -248,6 +248,13 @@ opacity: 0;}
 #section1 .lazy-slider img {
     width:100%
 }
+
+#section1 .slider1 {
+ display: block!important;    
+}
+#section1 .slider2 {
+    display: block!important;    
+   }
 /*슬라이드 텍스트1*/
 #section1 .slide-text1{
     position: absolute;top:46%;left:10%;
@@ -1051,7 +1058,12 @@ right:10%;top: 70%;
 #popup .content2{position:absolute;top:calc(50% - 150px);right:-1020px;width:1020px;
     background-color:#ffffff;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 9%);
-}         
+    transition: 0.3s;
+}     
+#popup .content2.opencontent{
+    right:0
+} 
+
 #popup #quick{width:78px;height:50px;position:absolute;left:-78px;top:125px;
  text-align:center;line-height: 50px;
  border-radius:60px 0px 0px 60px;
@@ -1233,9 +1245,20 @@ z-index: 999999;
     #header .nav-open>a {
         padding-right: 31px;
     }
+  /*  #popup .content2 {
+        position: absolute;
+        top: calc(50% - 150px);
+        right: -1020px;
+        width: 1020px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 9%);
+        transition: 0.3s;
+    }*/
     #popup .content2 {
-        z-index: 999999;width:100%
+        z-index: 999999;width:calc(100% - 76px);
+        right:calc(76px - 100%)
     }
+
 
 }
 
@@ -1291,9 +1314,12 @@ z-index: 999999;
     
 #sectionWrap .section01 .cont.on{
     height:400px; width:100%
+
 }
 #section5 .slick-next{display: none;}
+
 #section5 .slick-prev{display: none;}
+
 #section3 .intro-center{
     margin-top: 80px;float:none; width: 100%;
    }
@@ -1384,5 +1410,15 @@ position: absolute;top:40px;left: 40%;
         color: #424242;
         margin-top: 250px;
     }
-}
+    #section2-m p{
+        font-size: 0.7rem;
+    }
+    #section2-m div:nth-child(1) {
+        background-size: 30px;
+        background-position: 40px 45px;
+    }
+    #section2-m div:nth-child(2) {
+        background-size: 30px;
+        background-position: 30px 45px;
+    }
 }

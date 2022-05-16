@@ -170,12 +170,14 @@ $('.lan button').click(function(){
 var open_on = 0;
 $('.open').click(function(){
   if (open_on == 0) {
-   $('.content2').animate({right:0});
+   //$('.content2').animate({right:0});
+   $('.content2').addClass("opencontent")
    $(this).css({'background-color':'#4FAAD1',color:'#fff'});
    $(this).text('〉');
    open_on = 1;
   } else {
-   $('.content2').animate({right:'-1020px'});
+  // $('.content2').animate({right:'-1020px'});
+  $('.content2').removeClass("opencontent")
    $(this).css({'background-color':'#4FAAD1',color:'#000'});
    $(this).text('〈');
    open_on = 0;
