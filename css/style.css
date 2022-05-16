@@ -1135,6 +1135,9 @@ cursor: pointer;}
     #section7 .tour-img-box img{
         width:500px
     }
+    #header .nav-left .depth1 .nav-box-right img{
+        width:100px  
+    }
 }
 
 @media all and (max-width:1200px) {
@@ -1233,12 +1236,15 @@ z-index: 999999;    width: 50%;
    #popup .content2 ul {
        flex-direction: column;
    }
+   #section3{
+       margin-top: 200px;
+   }
    #section2{
        display: none;
+
    }
    #section2-m{
       display:flex;
-      margin-bottom: 200px;
    }
    #header .nav-right .button {
 
@@ -1247,8 +1253,20 @@ z-index: 999999;    width: 50%;
 }
 #header{
     background-color: #fff;
+    position: relative;
 }
-
+#header .logo {
+position: absolute;top:40px;left: 40%;
+}
+#section1 .slick-dots button {
+    width: 141px;}
+    #section6 .map-text-box {
+    
+        width: 154px;
+        padding: 69px;
+        right: 20%;
+        top: 70%;
+    }
 }
 
 
