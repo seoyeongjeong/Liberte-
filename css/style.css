@@ -1098,7 +1098,7 @@ cursor: pointer;}
 
 
 
-/*모바일*/
+/*pc*/
 
 
 
@@ -1114,6 +1114,11 @@ cursor: pointer;}
 }
 }
 
+
+
+
+
+
 @media all and (max-width:1340px){
     #header .nav-open>a {
         padding-right: 60px;
@@ -1122,6 +1127,10 @@ cursor: pointer;}
         width:300px
     }
 }
+
+
+
+
 
 @media all and (max-width:1260px){
     #section7 .tour-img-box .box-1:nth-child(3){
@@ -1139,6 +1148,11 @@ cursor: pointer;}
         width:100px  
     }
 }
+
+
+
+
+
 
 @media all and (max-width:1200px) {
     #header .nav-left .depth1 .nav-box-right img{
@@ -1190,29 +1204,91 @@ cursor: pointer;}
     text-align: center;
     margin-top: 40px;
 }
-
+#section4 {
+    padding: 0px 40px 0px 40px;
+}
 /*section4 아코디언*/
 #sectionWrap .section01 .cont{width:200px; height:600px; overflow:hidden; float:left; position:relative;transition: width 0.4s;}
-#sectionWrap .section01 .cont.on{width:calc(100% - 200px * 2);}
+#sectionWrap .section01 .cont.on{width:calc(100% - 220px * 2);}
 /*팝업*/
 #popup .content2 {
-z-index: 999999;    width: 50%; 
+z-index: 999999;
 }
-#popup .content2 ul{
-    flex-direction: column;
-}
-#popup .open {
-    
-}
-#popup .content2 ul li button {
 
+#popup .content2 ul li button {
     transform: none;
 }
 }
 
+
+
+
+
+
+
+
+
+
+@media all and (max-width:1090px){
+    #header .nav-open>a {
+        padding-right: 31px;
+    }
+    #popup .content2 {
+        z-index: 999999;width:100%
+    }
+
+}
+
+
+
+
+
+@media all and (max-width:860px){
+    #popup .content2 ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    #popup .content2 ul li{
+        border-right: none;
+        border-bottom: 1px solid #E0ECF0;
+    }
+    #section1 .slide-text1 span {
+        font-size: 1.5rem;
+
+    }
+    #section1 .slide-text2 span {
+        font-size: 1.5rem;
+
+    }
+}
+
+
+
+
+
+
+@media all and (max-width:950px){
+    #header .nav-open>a {
+        padding-right: 24px;
+        
+    }
+    #header .logo a img {
+        width: 93px;
+    }
+}
+
+
+
+
+
+
 @media all and (max-width:760px){
     #sectionWrap .section01 .cont{width:100%; height:200px; overflow:hidden; float:none; position:relative;transition:height 0.4s;
     }
+    
 #sectionWrap .section01 .cont.on{
     height:400px; width:100%
 }
@@ -1261,11 +1337,13 @@ position: absolute;top:40px;left: 40%;
 #section1 .slick-dots button {
     width: 141px;}
     #section6 .map-text-box {
-    
         width: 154px;
-        padding: 69px;
+        padding: 30px;
         right: 20%;
         top: 70%;
+    }
+    #section6 .map-text-box p {
+        font-size: 0.6rem;
     }
     #section2-m div:nth-child(1) {
 
@@ -1277,40 +1355,13 @@ position: absolute;top:40px;left: 40%;
         background-size: 40px;
         background-position: 40px 40px;
     }
+   
+    
 }
 
 
-@media all and (max-width:860px){
-    #popup .content2 ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 30px;
-       
-    }
-    #popup .content2 ul li{
-        border-right: none;
-        border-bottom: 1px solid #E0ECF0;
-    }
-    #section1 .slide-text1 span {
-        font-size: 1.5rem;
 
-    }
-    #section1 .slide-text2 span {
-        font-size: 1.5rem;
 
-    }
-}
-@media all and (max-width:950px){
-    #header .nav-open>a {
-        padding-right: 24px;
-        
-    }
-    #header .logo a img {
-        width: 93px;
-    }
-}
 @media all and (max-width:450px){
     #section1 .slide-text2 p:nth-child(2) {
         font-size: 0.6rem;
@@ -1334,8 +1385,4 @@ position: absolute;top:40px;left: 40%;
         margin-top: 250px;
     }
 }
-@media all and (max-width:1090px){
-    #header .nav-open>a {
-        padding-right: 31px;
-    }
 }
