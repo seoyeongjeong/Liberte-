@@ -420,6 +420,39 @@ opacity: 0;}
 #section2 .reservattion-li{
     width:160px
 }
+/*sec2모바일*/
+
+#section2-m{    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: #fff;
+    display:none;
+    position: absolute;
+}
+#section2-m div:nth-child(1){
+    padding: 50px;    text-align: center;
+    border-right: 1px solid #656565;
+    background-color: #353A3E;
+    width:60%;
+    background-image: url(../images/list_m.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 40px 30px;
+}
+#section2-m div:nth-child(2){
+    border:none; padding: 50px;    text-align: center;
+    background-color: #353A3E;
+    width:60%;
+    background-image: url(../images/list2_m.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 40px 30px;
+
+
+
+
+}
 /*달력 디자인*/
 .ui-widget-header {
     border: 0px solid #dddddd;
@@ -1200,6 +1233,21 @@ z-index: 999999;    width: 50%;
    #popup .content2 ul {
        flex-direction: column;
    }
+   #section2{
+       display: none;
+   }
+   #section2-m{
+      display:flex;
+      margin-bottom: 200px;
+   }
+   #header .nav-right .button {
+
+    background-size: 42px;
+    width: 68px;
+}
+#header{
+    background-color: #fff;
+}
 
 }
 
