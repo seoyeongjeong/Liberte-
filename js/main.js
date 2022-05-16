@@ -231,21 +231,30 @@ $(".depth1 > li").each(function(){
 //모바일 서비스
  if ($(window).width() < 800) {
   $('.depth1').hide();
-  $('#section4 .service img').attr('src','images/service-banner1-m.jpg');
+  $('#section4 .service img').attr('src','images/service-banner1-m.jpg');//서비스배너
+  $('#section1 .slider1 img').attr('src','images/slide1-m.jpg');//슬라이드1m
+  $('#section1 .slider2 img').attr('src','images/slide2-m.jpg');//슬라이드2m
  
 }else {
   $('.depth1').show();
-  $('#section4 .service img').attr('src','images/service-banner1-pc.jpg');
+  $('#section4 .service img').attr('src','images/service-banner1-pc.jpg');//서비스배너
+  $('#section1 .slider1 img').attr('src','images/slide1-pc.jpg');//슬라이드1pc
+  $('#section1 .slider2 img').attr('src','images/slide2-pc.jpg');//슬라이드2pc
+
 
 } 
 $(window).resize(function(){
 if ($(window).width() < 800) {
   $('.depth1').hide();
-  $('#section4 .service img').attr('src','images/service-banner1-m.jpg');
+  $('#section4 .service img').attr('src','images/service-banner1-m.jpg');//서비스배너
+  $('#section1 .slider1 img').attr('src','images/slide1-m.jpg');//슬라이드1m
+  $('#section1 .slider2 img').attr('src','images/slide2-m.jpg');//슬라이드2m
 
 }else {
  $('.depth1').show();
-  $('#section4 .service img').attr('src','images/service-banner1-pc.jpg');
+  $('#section4 .service img').attr('src','images/service-banner1-pc.jpg');//서비스배너
+  $('#section1 .slider1 img').attr('src','images/slide1-pc.jpg');//슬라이드1pc
+  $('#section1 .slider2 img').attr('src','images/slide2-pc.jpg');//슬라이드2pc
 
 }
 })//모바일 서비스 닫기
