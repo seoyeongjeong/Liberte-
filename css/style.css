@@ -748,19 +748,19 @@ height: 200px;
 #sectionWrap .section01 .cont{width:353px; height:600px; overflow:hidden; float:left; position:relative;transition: width 0.4s;}
 #sectionWrap .section01 .cont.on{width:calc(100% - 353px * 2);}
 #sectionWrap .section01 .cont p{
-    position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);font-size: 2.0rem;color: #fff;      font-family : 'NotoSansKR-Light';
+    position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);font-size: 2.0rem;color: rgb(0, 0, 0);      font-family : 'NotoSansKR-Light';
 
 }
 #sectionWrap .section01 .cont::before{
     content: '';display: block;width: 150px;height: 150px;
-    border-radius: 50%;background-color: rgba(0, 0, 0,0);
+    border-radius: 50%;background-color: rgba(255, 255, 255, 0)255, 0);
     position: absolute;
     top:50%;left: 50%;transform: translate(-50%,-50%);transition: background-color 0.5s;
     
 }
 
 #sectionWrap .section01 .cont.on::before{
-    background-color: rgba(0, 0, 0,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 #sectionWrap .section01 .cont img{
     opacity: 0.5;
@@ -1441,8 +1441,17 @@ z-index: 999999;
     #footer .footer-2 img {
         margin-right: 8px;
     }
+    #footer{
+    }
     #footer .footer-1 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;     
+
+    }
+    #footer .footer-3{
+        padding:0px 30px 0px 30px 
+    }
+    #footer .footer-4{
+        padding:0px 30px 0px 30px 
     }
 }
 
