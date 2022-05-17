@@ -358,7 +358,6 @@ nav { width: 100%; display: none;}
 footer {
   width: 100%;
   background: #0099cc;
-  padding: 10px;
   color: #fff;
   margin-top: 40px;
 }
@@ -1489,6 +1488,10 @@ z-index: 999999;
 
 
 @media all and (max-width:760px){
+    #section6{
+        padding:30px;
+        max-width:539px
+    }
     #sectionWrap .section01 .cont{width:100%; height:200px; overflow:hidden; float:none; position:relative;transition:height 0.4s;
     }
     
@@ -1602,6 +1605,9 @@ z-index: 999999;
 
 
 @media all and (max-width: 768px) {
+    #footer .footer-3 {
+        display: flex;
+        flex-wrap: wrap;}
     nav { width: 100%; display: block;}
 
     .nav_wrapper {
@@ -1796,7 +1802,12 @@ z-index: 999999;
 
 
 
-
+    @media all and (max-width:630px){
+        #section6 {
+            padding: 30px;
+            max-width: 438px;
+        }
+    }
 
 
 
@@ -1832,9 +1843,22 @@ z-index: 999999;
     #header .nav-right .language{
     
     }
+    #footer .footer-1 .txt span {
+        margin-right: 5px;
+        display: inline-block;
+    }
+
+    
 }
 
 
+@media all and (max-width:438px){
+    #section6 {
+        padding: 30px;
+        max-width: 382px;
+    }
+}
+}
 
 
 
