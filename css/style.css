@@ -299,8 +299,10 @@ nav { width: 100%; display: none;}
   color: #fff;
 }
 
-.menu ul li > a { padding: 15px; }
-
+.menu ul li>a { padding: 15px;     font-size: 1.1rem;}
+.menu ul li ul li a{
+    font-size: 0.9rem;
+}
 .menu ul ul {
   display: none;
   position: absolute;
@@ -309,7 +311,7 @@ nav { width: 100%; display: none;}
   background: #39484d;
 }
 
-.menu ul li:hover > ul { display: block; }
+
 
 .menu ul ul > li { position: relative; }
 
@@ -323,7 +325,10 @@ nav { width: 100%; display: none;}
     background: #f2f1ff;
     color: rgb(42, 42, 46);
 }
+.menu  {
+    background-color: #f2f1ff;
 
+}
 .menu ul ul ul {
   position: absolute;
   left: 100%;
@@ -1686,8 +1691,7 @@ z-index: 999999;
     
     .menu,
     .menu > ul ul {
-      overflow: hidden;
-      max-height: 0;
+     display: none;
       background-color: #ffffff;
     }
     
@@ -1697,7 +1701,7 @@ z-index: 999999;
     }
     
     .menu.active,
-    .menu > ul ul.active { max-height: 55em; }
+    .menu > ul ul.active { display: block;}
     
     .menu ul { display: inline; }
     
@@ -1728,11 +1732,12 @@ z-index: 999999;
     .menu ul ul > li a {
       background-color: #ffffff;
       padding: 10px 18px 10px 30px;
+      color: rgb(158, 158, 158);
     }
     
     .menu ul li a:hover {
       background: #ffffff;
-      color: rgb(43, 55, 70);
+      color: #0099cc;
     }
     
     .menu ul li.hover > a {
@@ -1742,7 +1747,6 @@ z-index: 999999;
     
     .menu ul ul,
     .menu ul ul ul {
-      display: inherit;
       position: relative;
       left: auto;
       top: auto;
